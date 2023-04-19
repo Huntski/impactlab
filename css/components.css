@@ -1,0 +1,87 @@
+/**
+    Logo.
+ */
+
+.logo {
+    @apply flex items-center gap-5 text-white font-headings font-bold text-2xl;
+}
+
+.logo img {
+    @apply w-12;
+}
+
+.logo span {
+    @apply text-[#6992FF];
+}
+
+/**
+    Buttons.
+ */
+
+.button {
+    @apply relative border-none bg-none px-8 py-5 rounded font-bold cursor-pointer text-lg;
+}
+
+.button span {
+    position: relative;
+    transform: skewX(-20deg);
+}
+/*
+    Button within dark layout.
+ */
+
+.button--tab {
+    background-color: #69D98B;
+}
+
+.button--tab:hover,
+.button--tab:focus {
+    background-color: #60cb80;
+}
+
+/**
+    Primary button.
+ */
+
+.button--primary {
+    background-color: #f5de90;
+    color: black;
+}
+.button--primary:hover,
+.button--primary:focus {
+    background-color: #fce6a6;
+}
+
+/**
+    Secondary button.
+ */
+
+.button--secondary {
+    box-shadow: inset 0 0 0 4px black;
+    color: black;
+}
+.button--secondary:hover,
+.button--secondary:focus {
+    color: #699DD9;
+    box-shadow: inset 0 0 0 4px #699DD9;
+}
+
+/**
+    Close button.
+ */
+
+.button--close {
+    position: relative;
+    box-shadow: inset 0 0 0 2px #DB5F4E;
+    transition: box-shadow 100ms ease-out;
+    color: #DB5F4E;
+}
+
+.button--close:before,
+.button--close:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+}

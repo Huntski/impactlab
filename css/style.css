@@ -1,0 +1,131 @@
+@import './tailwind.css';
+@import './fonts.css';
+@import './components.css';
+@import './header.css';
+@import './footer.css';
+
+body, html {
+    background-image: linear-gradient(to bottom, #ffffff, #f3f3f3);
+    background-size: contain;
+    min-height: 100vh;
+    max-width: 1450px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+button, input {
+    @apply border-none bg-none;
+}
+
+h1, h2, h3, button {
+    @apply font-headings;
+}
+
+p, p span, a {
+    @apply font-content;
+}
+
+p {
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+    @apply text-inherit no-underline;
+}
+
+/**
+    Introduction to impactlab.
+ */
+
+.introduction {
+    @apply grid grid-cols-1 mx-10 lg:mx-auto lg:grid-cols-2 max-w-6xl md:pt-32 w-full box-border pb-20 px-20;
+}
+
+.introduction__message {
+    @apply relative mb-10 px-10 py-14 md:p-0 w-full box-border;
+}
+
+.introduction__right-section {
+    @apply hidden lg:block;
+}
+
+@media screen and (max-width: 760px) {
+    .introduction__message {
+        background: url("../img/plastic-bag.png") no-repeat center/cover;
+    }
+}
+
+.introduction__message:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+    z-index: 1;
+}
+.introduction__message:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    z-index: 2;
+    background: #EFD780;
+    transform: translate(-50%, 50%);
+}
+
+@media screen and (min-width: 768px) {
+    .introduction__message:before,
+    .introduction__message:after {
+        display: none;
+    }
+}
+
+.introduction h1 {
+    @apply relative z-10;
+}
+
+.introduction h1 span {
+    @apply block;
+}
+
+.introduction__message p {
+    @apply relative z-10;
+}
+
+/**
+    Help's section.
+ */
+
+.help__scene {
+    @apply relative z-10 p-10 shadow-lg bg-white rounded-tr-3xl rounded-bl-3xl;
+    box-shadow: 0 0 0 5px black;
+}
+
+/**
+    Issue's section.
+ */
+
+.issue-list {
+    @apply grid md:grid-cols-3 gap-10 max-w-7xl mx-auto px-20 text-white justify-center;
+}
+
+.issue-list__item {
+    @apply bg-[#434343] rounded-2xl p-6;
+    aspect-ratio: 2 / 3;
+}
+
+.issue-list__item h3 {
+    @apply text-3xl font-headings font-bold;
+}
+
+.issue-list__item p {
+    @apply text-sm mt-5 whitespace-pre-line;
+}
+
