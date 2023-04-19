@@ -3,7 +3,7 @@
  */
 
 header {
-    @apply flex items-center justify-between relative right-0 left-0 z-50 text-white bg-[#1f1f1f] shadow px-10 py-5 box-border rounded-2xl box-border m-5;
+    @apply flex items-center justify-between text-white bg-[#1f1f1f] shadow px-10 py-5 box-border rounded-2xl box-border m-5;
 }
 
 header ul {
@@ -110,7 +110,6 @@ header li.active {
     background: black;
     z-index: 50;
     background: rgba(0, 0, 0, .3);
-    backdrop-filter: blur(5px);
     display: none;
 }
 

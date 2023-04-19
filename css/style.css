@@ -8,10 +8,15 @@ body, html {
     background-image: linear-gradient(to bottom, #ffffff, #f3f3f3);
     background-size: contain;
     min-height: 100vh;
+    @apply text-sm md:text-base box-border;
+}
+
+.container {
+    position: relative;
     max-width: 1450px;
+    overflow-x: hidden;
     width: 100%;
     margin: 0 auto;
-    position: relative;
 }
 
 button, input {
@@ -40,23 +45,17 @@ a {
  */
 
 .introduction {
-    @apply grid grid-cols-1 mx-10 lg:mx-auto lg:grid-cols-2 max-w-6xl md:pt-32 w-full box-border pb-20 px-20;
+    @apply grid grid-cols-1 lg:mx-10 lg:mx-auto lg:grid-cols-2 max-w-6xl lg:p-32 w-full box-border;
 }
 
 .introduction__message {
-    @apply relative mb-10 px-10 py-14 md:p-0 w-full box-border;
+    background: url("../img/plastic-bag.png") no-repeat center/cover;
+    @apply relative mb-10 px-10 py-14 lg:p-0 w-full box-border lg:bg-none;
 }
 
 .introduction__right-section {
     @apply hidden lg:block;
 }
-
-@media screen and (max-width: 760px) {
-    .introduction__message {
-        background: url("../img/plastic-bag.png") no-repeat center/cover;
-    }
-}
-
 .introduction__message:after {
     content: "";
     position: absolute;
@@ -66,6 +65,7 @@ a {
     width: 100%;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
     z-index: 1;
+    display: block;
 }
 .introduction__message:before {
     content: "";
@@ -78,9 +78,10 @@ a {
     z-index: 2;
     background: #EFD780;
     transform: translate(-50%, 50%);
+    display: block;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     .introduction__message:before,
     .introduction__message:after {
         display: none;
@@ -108,17 +109,23 @@ a {
     box-shadow: 0 0 0 5px black;
 }
 
+@media screen and (max-width: 1024px) {
+    .help-text-container {
+        @apply flex flex-col flex-col-reverse;
+    }
+}
+
 /**
     Issue's section.
  */
 
 .issue-list {
-    @apply grid md:grid-cols-3 gap-10 max-w-7xl mx-auto px-20 text-white justify-center;
+    @apply grid lg:grid-cols-3 gap-10 max-w-7xl mx-auto px-20 text-white justify-center mt-20 lg:mt-0;
 }
 
 .issue-list__item {
-    @apply bg-[#434343] rounded-2xl p-6;
-    aspect-ratio: 2 / 3;
+    @apply bg-[#434343] rounded-2xl p-6 aspect-square lg:aspect-[2/3];
+    /*aspect-ratio: 2 / 3;*/
 }
 
 .issue-list__item h3 {

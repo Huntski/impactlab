@@ -13,137 +13,160 @@
     <title>impactlab</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="./img/logo-white.svg" alt="Impactlab's logo in a white color.">
-            <h1>impact<span>lab</span></h1>
-        </div>
-
-        <ul class="navigation">
-<!--            <li class="active"><a href="index.html">Home</a></li>-->
-<!--            <li><a href="index.html">Problems</a></li>-->
-        </ul>
-
-        <button class="button button--tab text-black">
-            <span>DONATE</span>
-        </button>
-
-        <button class="hamburger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </header>
-
-    <nav class="side-menu md:hidden" data-open="0">
-        <div>
-            <div class="log">
-                <h1>impact<span>lab</span></h1>
-            </div>
-
-            <button class="button--close"></button>
-        </div>
-
-        <ul class="navigation">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="index.html">Problems</a></li>
-            <li><a href="index.html">Products</a></li>
-            <li><a href="index.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <div class="content-overlay"></div>
-
-    <main class="pb-20">
-        <div class="introduction">
-            <div class="introduction__left-section">
-                <div class="introduction__message">
-                    <h1 class="text-6xl font-headings font-bold mb-10 text-blue-700">Sending out the <span class="text-white md:text-black">MESSAGE</span></h1>
-                    <p class="text-white md:text-gray-800 whitespace-pre-line">Impactlab is a company that tries to make people aware of many environmental problems in the world through our clothes. We donate 80% of our prophets to charities that are trying to fix these problems.</p>
-                </div>
-
-                <div class="introduction__redirects grid md:flex items-center gap-5 px-10 md:px-0">
-                    <button class="button button--primary">
-                        <span>Find out more!</span>
-                    </button>
-                    <button class="button button--secondary">
-                        <span>Spread the message!</span>
-                    </button>
-                </div>
-            </div>
-
-            <div class="introduction__right-section w-full">
-                <img src="img/introduction-illustration.png" alt="introduction mask" class="introduction__illustration pointer-events-none">
-            </div>
-        </div>
-
-        <div class="help relative z-20 max-w-screen-desktop">
-            <div class="max-w-5xl mx-auto grid grid-cols-2 w-full gap-20">
-                <div class="relative z-40 w-80 h-96 bg-gray-700 rounded-2xl help__image">
-                    <div class="absolute top-0 right-0 mr-10 mt-10 w-full h-full bg-[#3B628E] -z-10 rounded-2xl"></div>
-                </div>
-
-                <div class="help__scene mt-20">
-                    <h2 class="text-4xl text-black font-bold mb-10">How you can help</h2>
-                    <p class="whitespace-pre-line">There are many ways to help but the most important way is by just watching the way you live. Try to buy biological meat if you can or try some vegan options. Take the train or bus instead of using a car. By changing small things in your life you can help the world out a lot.</p>
-                </div>
-            </div>
-
-            <img src="img/help-backdrop.svg" alt="Backdrop for the help section." class="absolute top-0 left-0 right-0 -z-10 w-full pointer-events-none">
-        </div>
-
-        <div class="pt-40 relative z-20">
-            <div class="relative grid grid-cols-2 items-center flex max-w-screen-desktop mx-40 text-white">
-                <h1 class="text-6xl font-bold">Environmental <span class="block text-9xl">ISSUES</span></h1>
-
-                <p class="whitespace-pre-line">
-                    There are many issues we as a company want people to be aware of. We as humans have a responsibility to look after the world we live on. But no one can do it alone. We need everyone to work together and understand what problems we  face in the world.
-
-                    So let’s do that together. Learn and spread the word.
-                </p>
-            </div>
-
-            <div class="relative issue-list">
-                <article class="issue-list__item lg:mt-52">
-                    <h3>Forst fires</h3>
-                    <p>
-                        Since the temperatures are getting higher and higher, forest fires have been becoming a bigger and more perpetual problem. This is why we need to make plans to try and minimize the damage that can be done from a forest fire until we find a way to get the temperatures down.
-
-                        We need to protect our forests!
-                    </p>
-                </article>
-
-                <article class="issue-list__item lg:mt-40">
-                    <h3>Plastic soup</h3>
-                    <p>
-                        There is a huge amount of plastic in the seas. This is a huge problem for all the animals that live in these waters, and if it’s a problem for them it’s a problem for us. This is because now in almost all the water and seafood we eat and drink there is some amount of plastic. Research has found that an average adult consumes about 35,000 microplastics a year. If we don’t start fixing this problem it will start getting worse.
-
-                        Will you help to carry plastic out of the ocean?
-                    </p>
-                </article>
-
-                <article class="issue-list__item lg:mt-20">
-                    <h3>Melting poles</h3>
-                    <p>
-                        The poles are melting and this is a huge problem since all this water will immensely rise the water level. Next to this it’s destroying many lives of multiple kinds of animals. WE can’t let them be the victim of something we are doing.
-                    </p>
-                </article>
-            </div>
-
-            <img src="img/issues-backdrop.svg" alt="Backdrop for the issue's section." class="absolute top-0 left-0 right-0 -z-10 w-full">
-        </div>
-    </main>
-
-    <footer class="text-xl mt-0 rounded-t-2xl">
-        <div>
+    <div class="container">
+        <header>
             <div class="logo">
                 <img src="./img/logo-white.svg" alt="Impactlab's logo in a white color.">
                 <h1>impact<span>lab</span></h1>
             </div>
 
-            <p class="text-sm w-1/2 mt-5 text-gray-300">Impactlab is a company that tries to make people aware of many environmental problems in the world through our clothes. We donate 80% of our prophets to charities that are trying to fix these problems.</p>
-        </div>
-    </footer>
+            <ul class="navigation">
+                <!--            <li class="active"><a href="index.html">Home</a></li>-->
+                <!--            <li><a href="index.html">Problems</a></li>-->
+            </ul>
+
+            <button class="button button--tab text-black">
+                <span>DONATE</span>
+            </button>
+
+            <button class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+
+        <nav class="side-menu lg:hidden" data-open="0">
+            <div>
+                <div class="log">
+                    <h1>impact<span>lab</span></h1>
+                </div>
+
+                <button class="button--close"></button>
+            </div>
+
+            <ul class="navigation">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Problems</a></li>
+                <li><a href="index.html">Products</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="content-overlay"></div>
+
+        <main class="pb-20">
+            <div class="introduction">
+                <div class="introduction__left-section">
+                    <div class="introduction__message">
+                        <h1 class="text-6xl font-headings font-bold mb-14 text-blue-400 lg:text-blue-700">Sending out the <span class="text-white lg:text-black">MESSAGE</span></h1>
+                        <p class="text-white lg:text-gray-800 whitespace-pre-line">Impactlab is a company that tries to make people aware of many environmental problems in the world through our clothes. We donate 80% of our prophets to charities that are trying to fix these problems.</p>
+                    </div>
+
+                    <div class="introduction__redirects grid lg:flex items-center gap-5 px-10 lg:px-0">
+                        <button class="button button--primary">
+                            <span>Find out more!</span>
+                        </button>
+                        <button class="button button--secondary">
+                            <span>Spread the message!</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="lg:ml-20 w-full hidden lg:block">
+                    <img src="img/introduction-illustration.png" alt="introduction mask" class="introduction__illustration pointer-events-none">
+                </div>
+            </div>
+
+            <div class="help relative z-20 max-w-screen-desktop mt-10">
+                <div class="help-text-container max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 w-full gap-20">
+                    <div class="relative z-20 w-80 h-96 bg-gray-700 rounded-2xl help__image w-full mx-20">
+                        <div class="absolute top-0 right-0 mr-10 mt-10 w-full h-full bg-[#3B628E] -z-40 rounded-2xl">
+                            <img src="img/lab-picture-cutting-logos.png" alt="Picture of people working inside of a lab, cutting out stickers of logo's." class="w-full h-full object-cover rounded-2xl">
+                        </div>
+                    </div>
+
+                    <div class="help__scene border-5 border-black relative z-10 p-10 shadow-lg bg-white rounded-tr-3xl rounded-bl-3xl mt-20 mx-10">
+                        <h2 class="text-4xl text-black font-bold mb-10">How you can help</h2>
+                        <p class="whitespace-pre-line">There are many ways to help but the most important way is by just watching the way you live. Try to buy biological meat if you can or try some vegan options. Take the train or bus instead of using a car. By changing small things in your life you can help the world out a lot.</p>
+                    </div>
+                </div>
+
+                <img src="img/help-backdrop.svg" alt="Backdrop for the help section." class="absolute top-0 left-0 right-0 -z-10 w-full pointer-events-none hidden lg:block">
+            </div>
+
+            <div class="pt-40 relative z-20">
+                <div class="relative grid lg:grid-cols-2 items-center flex max-w-5xl lg:mx-auto text-black mx-20 lg:text-white">
+                    <h1 class="text-6xl font-bold">Environmental <span class="block text-9xl">ISSUES</span></h1>
+
+                    <p class="whitespace-pre-line">
+                        There are many issues we as a company want people to be aware of. We as humans have a responsibility to look after the world we live on. But no one can do it alone. We need everyone to work together and understand what problems we  face in the world.
+
+                        So let’s do that together. Learn and spread the word.
+                    </p>
+                </div>
+
+                <div class="relative issue-list">
+                    <a href="article.html" class="issue-list__item lg:mt-52">
+                        <h3>Forst fires</h3>
+                        <p>
+                            Since the temperatures are getting higher and higher, forest fires have been becoming a bigger and more perpetual problem. This is why we need to make plans to try and minimize the damage that can be done from a forest fire until we find a way to get the temperatures down.
+
+                            We need to protect our forests!
+                        </p>
+                    </a>
+
+                    <a href="article.html" class="issue-list__item lg:mt-40">
+                        <h3>Plastic soup</h3>
+                        <p>
+                            There is a huge amount of plastic in the seas. This is a huge problem for all the animals that live in these waters, and if it’s a problem for them it’s a problem for us. This is because now in almost all the water and seafood we eat and drink there is some amount of plastic. Research has found that an average adult consumes about 35,000 microplastics a year. If we don’t start fixing this problem it will start getting worse.
+
+                            Will you help to carry plastic out of the ocean?
+                        </p>
+                    </a>
+
+                    <a href="article.html" class="issue-list__item lg:mt-20">
+                        <h3>Melting poles</h3>
+                        <p>
+                            The poles are melting and this is a huge problem since all this water will immensely rise the water level. Next to this it’s destroying many lives of multiple kinds of animals. WE can’t let them be the victim of something we are doing.
+                        </p>
+                    </a>
+                </div>
+
+                <div class="absolute top-0 -z-20 left-0 right-0 w-full h-full">
+                    <img src="img/issues-backdrop.svg" alt="Backdrop for the issue's section." class="w-full h-full object-cover">
+                </div>
+            </div>
+        </main>
+
+        <footer class="text-xl mt-0 rounded-t-2xl flex gap-20 text-white">
+            <div>
+                <div class="logo">
+                    <img src="./img/logo-white.svg" alt="Impactlab's logo in a white color.">
+                    <h1>impact<span>lab</span></h1>
+                </div>
+
+                <p class="text-sm mt-5 w-80 text-gray-300 leading-6">Impactlab is a company that tries to make people aware of many environmental problems in the world through our clothes. We donate 80% of our prophets to charities that are trying to fix these problems.</p>
+            </div>
+
+            <div>
+                <h2 class="mb-5 font-bold font-headings">Global issues</h2>
+                <ul class="text-base text-gray-300 grid gap-2">
+                    <li>Forest Fires</li>
+                    <li>Plastic Soup</li>
+                    <li>Melting Poles</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="mb-5 font-bold font-headings">General</h2>
+                <ul class="text-base text-gray-300 grid gap-2">
+                    <li>Contact</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
