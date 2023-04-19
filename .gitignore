@@ -6,3 +6,6 @@ yarn.lock
 .yarnrc
 /dist/output.css
 /dist/
+node_modules
+.DS_Store
+.idea
