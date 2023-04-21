@@ -15,10 +15,10 @@
 <body>
     <div class="container">
         <header>
-            <div class="logo">
+            <a href="index.html" class="logo">
                 <img src="./img/logo-white.svg" alt="Impactlab's logo in a white color.">
                 <h1>impact<span>lab</span></h1>
-            </div>
+            </a>
 
             <ul class="navigation">
                 <!--            <li class="active"><a href="index.html">Home</a></li>-->
@@ -64,9 +64,9 @@
                     </div>
 
                     <div class="introduction__redirects grid lg:flex items-center gap-5 px-10 lg:px-0">
-                        <button class="button button--primary">
+                        <a href="#issues-section" class="button button--primary">
                             <span>Find out more!</span>
-                        </button>
+                        </a>
                         <button class="button button--secondary">
                             <span>Spread the message!</span>
                         </button>
@@ -79,14 +79,14 @@
             </div>
 
             <div class="help relative z-20 max-w-screen-desktop mt-10">
-                <div class="help-text-container max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 w-full gap-20">
+                <div class="help-text-container max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 w-full gap-20">
                     <div class="relative z-20 w-80 h-96 bg-gray-700 rounded-2xl help__image w-full mx-20">
                         <div class="absolute top-0 right-0 mr-10 mt-10 w-full h-full bg-[#3B628E] -z-40 rounded-2xl">
                             <img src="img/lab-picture-cutting-logos.png" alt="Picture of people working inside of a lab, cutting out stickers of logo's." class="w-full h-full object-cover rounded-2xl">
                         </div>
                     </div>
 
-                    <div class="help__scene border-5 border-black relative z-10 p-10 shadow-lg bg-white rounded-tr-3xl rounded-bl-3xl mt-20 mx-10">
+                    <div class="help__scene border-5 border-black relative z-10 p-10 shadow-lg rounded-tr-3xl rounded-bl-3xl mt-20 mx-10 bg-white">
                         <h2 class="text-4xl text-black font-bold mb-10">How you can help</h2>
                         <p class="whitespace-pre-line">There are many ways to help but the most important way is by just watching the way you live. Try to buy biological meat if you can or try some vegan options. Take the train or bus instead of using a car. By changing small things in your life you can help the world out a lot.</p>
                     </div>
@@ -95,9 +95,9 @@
                 <img src="img/help-backdrop.svg" alt="Backdrop for the help section." class="absolute top-0 left-0 right-0 -z-10 w-full pointer-events-none hidden lg:block">
             </div>
 
-            <div class="pt-40 relative z-20">
-                <div class="relative grid lg:grid-cols-2 items-center flex max-w-5xl lg:mx-auto text-black mx-20 lg:text-white">
-                    <h1 class="text-6xl font-bold">Environmental <span class="block text-9xl">ISSUES</span></h1>
+            <div class="pt-40 relative z-20" id="issues-section">
+                <div class="relative grid lg:grid-cols-2 items-center flex justify-center text-black lg:text-white max-w-5xl mx-24 lg:mx-auto">
+                    <h1 class="text-4xl lg:text-6xl font-bold">Environmental <span class="block text-9xl">ISSUES</span></h1>
 
                     <p class="whitespace-pre-line">
                         There are many issues we as a company want people to be aware of. We as humans have a responsibility to look after the world we live on. But no one can do it alone. We need everyone to work together and understand what problems we  face in the world.
@@ -107,29 +107,44 @@
                 </div>
 
                 <div class="relative issue-list">
-                    <a href="article.html" class="issue-list__item lg:mt-52">
-                        <h3>Forst fires</h3>
-                        <p>
-                            Since the temperatures are getting higher and higher, forest fires have been becoming a bigger and more perpetual problem. This is why we need to make plans to try and minimize the damage that can be done from a forest fire until we find a way to get the temperatures down.
+                    <a href="./article.html" class="issue-list__item lg:mt-52 overflow-hidden">
+                        <div class="relative z-30">
+                            <h3>Forest fires</h3>
+                            <p>
+                                Since the temperatures are getting higher and higher, forest fires have been becoming a bigger and more perpetual problem. This is why we need to make plans to try and minimize the damage that can be done from a forest fire until we find a way to get the temperatures down.
 
-                            We need to protect our forests!
-                        </p>
+                                We need to protect our forests!
+                            </p>
+                        </div>
+
+                        <!-- Source: https://www.bbc.com/news/world-49515462 -->
+                        <img src="img/forestfire.png" alt="Forest fire illustration" class="absolute top-0 left-0 w-full h-full object-cover">
                     </a>
 
                     <a href="article.html" class="issue-list__item lg:mt-40">
-                        <h3>Plastic soup</h3>
-                        <p>
-                            There is a huge amount of plastic in the seas. This is a huge problem for all the animals that live in these waters, and if it’s a problem for them it’s a problem for us. This is because now in almost all the water and seafood we eat and drink there is some amount of plastic. Research has found that an average adult consumes about 35,000 microplastics a year. If we don’t start fixing this problem it will start getting worse.
+                        <div class="relative z-30">
+                            <h3>Plastic soup</h3>
+                            <p>
+                                There is a huge amount of plastic in the seas. This is a huge problem for all the animals that live in these waters, and if it’s a problem for them it’s a problem for us. This is because now in almost all the water and seafood we eat and drink there is some amount of plastic. Research has found that an average adult consumes about 35,000 microplastics a year. If we don’t start fixing this problem it will start getting worse.
 
-                            Will you help to carry plastic out of the ocean?
-                        </p>
+                                Will you help to carry plastic out of the ocean?
+                            </p>
+                        </div>
+
+                        <!-- Source: https://www.plasticsoupfoundation.org/en/solutions/the-ocean-cleanup/ -->
+                        <img src="img/Passive-Cleanup-System-TOC.png" alt="Forest fire illustration" class="absolute top-0 left-0 w-full h-full object-cover">
                     </a>
 
                     <a href="article.html" class="issue-list__item lg:mt-20">
-                        <h3>Melting poles</h3>
-                        <p>
-                            The poles are melting and this is a huge problem since all this water will immensely rise the water level. Next to this it’s destroying many lives of multiple kinds of animals. WE can’t let them be the victim of something we are doing.
-                        </p>
+                        <div class="relative z-30">
+                            <h3>Melting poles</h3>
+                            <p>
+                                The poles are melting and this is a huge problem since all this water will immensely rise the water level. Next to this it’s destroying many lives of multiple kinds of animals. WE can’t let them be the victim of something we are doing.
+                            </p>
+                        </div>
+
+                        <!-- Source: https://physicsworld.com/a/melting-glaciers-have-been-shifting-the-earths-poles-since-1995-new-study-suggests/ -->
+                        <img src="img/glacier-melting-Antarctic-324590741-Shutterstock_Bernhard-Staehli.jpg" alt="Forest fire illustration">
                     </a>
                 </div>
 
@@ -139,14 +154,14 @@
             </div>
         </main>
 
-        <footer class="text-xl mt-0 rounded-t-2xl flex gap-20 text-white">
+        <footer class="text-xl mt-0 rounded-t-2xl grid grid-cols-1 lg:flex gap-20 bg-[#262626] p-20 text-white">
             <div>
                 <div class="logo">
                     <img src="./img/logo-white.svg" alt="Impactlab's logo in a white color.">
                     <h1>impact<span>lab</span></h1>
                 </div>
 
-                <p class="text-sm mt-5 w-80 text-gray-300 leading-6">Impactlab is a company that tries to make people aware of many environmental problems in the world through our clothes. We donate 80% of our prophets to charities that are trying to fix these problems.</p>
+                <p class="text-sm mt-5 lg:w-80 text-gray-300 leading-6">Impactlab is a company that tries to make people aware of many environmental problems in the world through our clothes. We donate 80% of our prophets to charities that are trying to fix these problems.</p>
             </div>
 
             <div>
@@ -155,6 +170,7 @@
                     <li>Forest Fires</li>
                     <li>Plastic Soup</li>
                     <li>Melting Poles</li>
+                    <li>Nitrogen</li>
                 </ul>
             </div>
 

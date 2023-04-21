@@ -2,13 +2,13 @@
 @import './fonts.css';
 @import './components.css';
 @import './header.css';
-@import './footer.css';
 
 body, html {
     background-image: linear-gradient(to bottom, #ffffff, #f3f3f3);
     background-size: contain;
     min-height: 100vh;
     @apply text-sm md:text-base box-border;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -20,7 +20,7 @@ body, html {
 }
 
 button, input {
-    @apply border-none bg-none;
+    @apply border-none bg-none text-center;
 }
 
 h1, h2, h3, button {
@@ -45,7 +45,7 @@ a {
  */
 
 .introduction {
-    @apply grid grid-cols-1 lg:mx-10 lg:mx-auto lg:grid-cols-2 max-w-6xl lg:p-32 w-full box-border;
+    @apply grid grid-cols-1 lg:mx-10 lg:mx-auto lg:grid-cols-2 lg:p-32 w-full box-border;
 }
 
 .introduction__message {
@@ -105,7 +105,7 @@ a {
  */
 
 .help__scene {
-    @apply relative z-10 p-10 shadow-lg bg-white rounded-tr-3xl rounded-bl-3xl;
+    @apply relative z-10 p-10 shadow-lg rounded-tr-3xl rounded-bl-3xl;
     box-shadow: 0 0 0 5px black;
 }
 
@@ -120,19 +120,49 @@ a {
  */
 
 .issue-list {
-    @apply grid lg:grid-cols-3 gap-10 max-w-7xl mx-auto px-20 text-white justify-center mt-20 lg:mt-0;
+    @apply grid lg:grid-cols-3 gap-10 max-w-7xl mx-auto px-10 text-white justify-center mt-20 lg:mt-0;
 }
 
 .issue-list__item {
-    @apply bg-[#434343] rounded-2xl p-6 aspect-square lg:aspect-[2/3];
-    /*aspect-ratio: 2 / 3;*/
+    @apply relative bg-[#434343] rounded-2xl p-6 aspect-square lg:aspect-[2/3] flex flex-col overflow-hidden;
+}
+.issue-list__item:focus,
+.issue-list__item:hover {
+    box-shadow: 0 0 0 5px black;
+}
+
+.issue-list__item:before {
+    content: "";
+    position: absolute;
+    z-index: 30;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #00000050, #00000080);
 }
 
 .issue-list__item h3 {
-    @apply text-3xl font-headings font-bold;
+    @apply text-4xl font-headings font-bold;
 }
 
 .issue-list__item p {
-    @apply text-sm mt-5 whitespace-pre-line;
+    @apply text-sm mt-5 whitespace-pre-line text-gray-200 leading-6;
 }
 
+.issue-list__item img {
+    @apply absolute top-0 left-0 w-full h-full object-cover;
+}
+
+
+/**
+    Article styling.
+ */
+
+.article-image {
+    box-shadow: 40px 40px 0 5px #3B628E;
+}
+
+.article-product {
+    box-shadow: 0 0 0 5px black;
+}

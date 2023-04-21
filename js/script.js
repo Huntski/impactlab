@@ -1,7 +1,7 @@
 const hamburgerMenuButton = document.querySelector('.hamburger-menu')
 const sideMenu = document.querySelector('.side-menu')
 
-hamburgerMenuButton.onclick = toggleSideMenu
+// hamburgerMenuButton.onclick = toggleSideMenu
 
 function toggleSideMenu() {
     sideMenu.dataset.open = sideMenu.dataset.open === "0" ? "1" : "0"
